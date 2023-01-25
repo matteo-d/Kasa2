@@ -1,11 +1,11 @@
 import Banner from "../components/BannerAbout"
-import Collapse from "../components/Collapse"
+import MultiCollapse from "../components/MultiCollapse"
 
 export function About() {
   return(
     <>
       <Banner />
-      <Collapse />
+      <MultiCollapse />
     </>
   )
 }

@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom"
 import { Div, DivDos, DivTres, LodgementInfos , Title, Location, ListTags, TagElement, Infos, Stars, WrapperStars, LandlordName, LandlordPicture } from "../styles/LodgementDescription"
-
+import { SingleCollapseText, SingleCollapseList } from "./SingleCollapse"
 import FilledStar from "../assets/FilledStar.svg"
 import EmptyStar from "../assets/EmptyStar.svg"
 import JsonData from "../data.json"
+
 
 function displayStars (numberOfStars){
   let Array = []
@@ -22,6 +23,7 @@ function displayStars (numberOfStars){
 export default function LodgementDescription(){
   const { id } = useParams()
   const Data = JsonData.filter(prop => prop.id === id)
+  console.log(typeof([0].equipments))
   const stars = displayStars(Data[0].rating)
   return(
     <LodgementInfos>
@@ -46,8 +48,8 @@ export default function LodgementDescription(){
           </WrapperStars>
       </DivDos>
       <DivTres>
-        <p>desc</p>
-        <p>equip</p>
+        <SingleCollapseText article={Data[0]} />
+        <SingleCollapseList article={Data[0].equipments} />
       </DivTres>
     </LodgementInfos>
   )

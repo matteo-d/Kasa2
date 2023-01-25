@@ -1,11 +1,11 @@
 import jsonData from "./about_text_data.json"
 import { useState } from "react"
-import { Section, Article, Div, Arrow, Title, Text } from "../styles/Collapse"
+import { Section, Article, HeaderArticle, Arrow, TitleArticle, Text } from "../styles/Collapse"
 
 import ArrowDown from "../assets/arrowDown.svg"
 import ArrowUp from "../assets/arrowUp.svg"
 
-export default function Collapse() {
+export default function MultiCollapse() {
   const [expanded, setExpanded] = useState({});
 
   function toggleArrow(id) {
@@ -18,10 +18,10 @@ export default function Collapse() {
         const isExpanded = expanded[article.id];
         return (
           <Article key={article.id}>
-            <Div>
-              <Title>{article.title}</Title>
+            <HeaderArticle>
+              <TitleArticle>{article.title}</TitleArticle>
               <Arrow bgImage={isExpanded ? ArrowUp : ArrowDown} onClick={() => toggleArrow(article.id)}> </Arrow>
-            </Div>
+            </HeaderArticle>
             <Text display={isExpanded ? "block" : "none"}>{article.text}</Text>
           </Article>
         );
