@@ -24,7 +24,7 @@ export  function SingleCollapseText({article}) {
   )
 }
 
-export function SingleCollapseList({ list }) {
+export function SingleCollapseList({list}) {
   const [isExpanded, setExpanded] = useState(false);
 
   function toggleArrow() {
@@ -38,11 +38,11 @@ export function SingleCollapseList({ list }) {
                 <TitleArticle>Equipements</TitleArticle>
                 <Arrow bgImage={isExpanded ? ArrowUp : ArrowDown} onClick={toggleArrow}> </Arrow>
             </HeaderArticle>
-            <List style={{ display: isExpanded ? "block" : "none" }}>
+            <ul style={{ display: isExpanded ? "block" : "none" }}>
                 {list.map((element, index) => (
                   <li key={index}>{element}</li>
                 ))}
-            </List>
+            </ul>
         </Article>
     </Section>
   )

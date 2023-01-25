@@ -5,7 +5,6 @@ import FilledStar from "../assets/FilledStar.svg"
 import EmptyStar from "../assets/EmptyStar.svg"
 import JsonData from "../data.json"
 
-
 function displayStars (numberOfStars){
   let Array = []
   let i = 0
@@ -20,12 +19,20 @@ function displayStars (numberOfStars){
   }
   return Array
 }
+
+function BuggyJSONToArray(equipments) {
+  let array = []
+  for ( let x of equipments) {
+    array.push(x)
+    }
+  return array
+  }
+
 export default function LodgementDescription(){
   const { id } = useParams()
   const Data = JsonData.filter(prop => prop.id === id)
-  console.log(typeof([0].equipments))
   const stars = displayStars(Data[0].rating)
-  return(
+    return(
     <LodgementInfos>
       <Div>
         <Title> {Data[0].title} </Title>
@@ -49,7 +56,8 @@ export default function LodgementDescription(){
       </DivDos>
       <DivTres>
         <SingleCollapseText article={Data[0]} />
-        <SingleCollapseList article={Data[0].equipments} />
+        <SingleCollapseList list={BuggyJSONToArray(Data[0].equipments)} />
+
       </DivTres>
     </LodgementInfos>
   )
