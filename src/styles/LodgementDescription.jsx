@@ -20,7 +20,7 @@ const DivTres = styled.div`
 `
 const Title = styled.h4`
 	font-style: normal;
-	font-weight: 500;
+	font-weight: var(--weight-medium);
 	font-size: 1.5rem;
 	color: var(--primary-color);	
 	margin : 0;
@@ -28,7 +28,7 @@ const Title = styled.h4`
 const Location = styled.p`
 	margin : 0;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: var(--weight-medium);
 	font-size: 0.75rem;
 	color: var(--primary-color);	
 `
@@ -41,7 +41,7 @@ const ListTags = styled.ul`
 
 const TagElement  = styled.li`
 	font-style: normal;
-	font-weight: 500;
+	font-weight:var(--weight-medium);
 	font-size: 0.6rem;
 	border-radius: 10px;
 	background-color : var(--primary-color);
@@ -56,6 +56,7 @@ const Infos = styled.div`
 `
 const LandlordName = styled.p`
 	width : min-content;
+	font-weight : var(--weight-medium);
 	font-size: 0.9rem;
 	color : var(--primary-color);
 	margin : 0 0.5rem 0 0;

@@ -13,7 +13,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif; 
     --primary-color : #FF6060;
     --secondary-color : #FFFFFF;
-    --tertiary-color : #F7F7F7
+    --tertiary-color : #F7F7F7;
+    --weight-little : 400;
+    --weight-medium : 500;
+    --weight-big : 700;
     }
     body {
     margin : 0;

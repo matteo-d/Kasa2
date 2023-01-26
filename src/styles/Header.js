@@ -13,10 +13,9 @@ height : 2.8rem;
 const Nav = styled.nav`
   align-self : center;
 `
-
 const Home = styled(Link)`
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--weight-medium);
   font-size: 1.65rem;
   text-decoration-line: none;
   color: var(--primary-color);
@@ -24,17 +23,15 @@ const Home = styled(Link)`
     text-decoration-line : underline;
   }
 `
-
 const About = styled(Link)`
   padding : 0rem 2rem 0rem 4rem;
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--weight-medium);
   font-size: 1.65rem;
   text-decoration-line: none;
   color: var(--primary-color); 
   &:active, &:hover {
     text-decoration-line : underline;
-  }
-`
+  } `
 
 export { StyledHeader, Img, Nav, Home, About }

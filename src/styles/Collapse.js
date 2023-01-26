@@ -38,7 +38,7 @@ background-color: var(--tertiary-color);
 border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
 font-style: normal;
-font-weight: 500;
+font-weight: var(--weight-little);
 font-size: 1rem;
 color : var(--primary-color);
 display : ${props => props.display};
@@ -56,7 +56,7 @@ const List = styled.li `
 border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
 font-style: normal;
-font-weight: 500;
+font-weight: var(--weight-little);
 font-size: 1rem;
 display : ${props => props.display};
 margin : 0;
