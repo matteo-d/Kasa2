@@ -1,6 +1,5 @@
 import jsonData from "../data.json"
 import { Section, Ul, Lodgement, Title} from "../styles/Card"
-
 export default function Card(){ 
   return(
     <Section>

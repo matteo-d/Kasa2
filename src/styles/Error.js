@@ -10,14 +10,12 @@ const Section = styled.section`
 `
 const ErrorTitle = styled.h4`
 margin : auto;
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 288px;
 color: #FF6060;
 `
 const Text = styled.p`
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 36px;
@@ -25,7 +23,6 @@ color: #FF6060;
 margin : auto;
 `
 const LinkTo = styled(Link)`
- font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 18px;

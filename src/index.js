@@ -1,18 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-
+import GlobalStyle from "./styles/Global"
 import Header from "./components/Header"
 import Foo from "./components/Footer"
 import { Home } from "./pages/Home"
 import { Lodging } from "./pages/Lodging"
 import { About } from "./pages/About"
 import { Err } from "./pages/Error"
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
+  <GlobalStyle />
     <BrowserRouter>
       <Header />
        <Routes>

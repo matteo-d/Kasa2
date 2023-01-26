@@ -2,23 +2,19 @@ import styled from "styled-components"
 import Img from "../assets/IMG.png"
 
 const Section = styled.section`
- background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.5) 100%);
 background-image: url(${Img});
 background-position : center;
 background-repeat : no-repeat;
-opacity : 90%;
+background-size : cover;
 display : flex;
-width : 85%;
-height : 4rem;
-margin : auto;
+height : 9.2rem;
 padding : 1.8rem 0 1.8rem 0;
-border-radius : 25px 25px 25px 25px 
+border-radius : 25px;
 `
 const Title = styled.h1`
 margin : auto;
-font-family: 'Montserrat';
 font-weight: 500;
-font-size: 44px;
-color: #FFFFFF;
+font-size: 2.8rem;
+color: var(--secondary-color);
 `
 export { Section, Title }

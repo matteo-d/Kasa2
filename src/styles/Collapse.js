@@ -1,9 +1,8 @@
 import styled from "styled-components"
 
-const Section = styled.section `
-width : 74%;
-margin-left : 13%;
-margin-right : 13%;
+const Section = styled.section `background-color : lightblue;
+display : flex;
+justify-content : space-between;
 `
 const Article = styled.article `
 display : flex;
@@ -21,7 +20,6 @@ border-radius: 5px;
 padding : 0 0rem 0 0.9rem;
 `
 const TitleArticle = styled.h3 `
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -40,7 +38,6 @@ const Text = styled.p `
 background: #F7F7F7;
 border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
@@ -51,7 +48,6 @@ const List = styled.li `
 background: #F7F7F7;
 border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
-font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
