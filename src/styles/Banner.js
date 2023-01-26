@@ -7,7 +7,7 @@ background-position : center;
 background-repeat : no-repeat;
 background-size : cover;
 display : flex;
-height : 10rem;
+height : 8rem;
 margin : auto;
 padding : 1.8rem 0 1.8rem 0;
 border-radius : 25px;

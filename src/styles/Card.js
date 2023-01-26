@@ -19,11 +19,15 @@ const Lodgement = styled(Link) `
   display : flex;
   align-items : flex-end;
   background-image : url(${props => props.cover});
+  background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
   filter: grayscale(55%);
   border-radius: 10px;
   width : 25%;
   height : 14.1rem;
-  padding : 0 1.5rem 0 1.5rem;
+  padding : 0 1.5rem 0 1rem;
+  font-weight : var(--weight-medium);
   margin-top : 1rem;
   text-decoration: none; 
 `

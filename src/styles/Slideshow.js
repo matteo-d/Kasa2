@@ -4,6 +4,9 @@ const Section = styled.section `
 
 width : var(--base-component-width);
   background-image : url(${props => props.bgImage});
+  background-position : center;
+background-repeat : no-repeat;
+background-size : cover;
   display : flex;
   height : 17.3rem;
   justify-content : space-between;
