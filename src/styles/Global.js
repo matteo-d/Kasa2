@@ -8,7 +8,6 @@ const GlobalStyle = createGlobalStyle`
     padding : 0;
     box-sizing: border-box;
     min-height : 100vh;
-    width : 86% ;
     margin : auto;
     font-family: 'Montserrat', sans-serif; 
     --primary-color : #FF6060;
@@ -17,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
     --weight-little : 400;
     --weight-medium : 500;
     --weight-big : 700;
+    --base-component-width : 86%;
     }
     body {
     margin : 0;

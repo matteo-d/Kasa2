@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 const LodgementInfos = styled.section`
+	margin : auto;
+	width : var(--base-component-width);
 	display : flex;
 	justify-content : space-between;
 	flex-wrap : wrap;

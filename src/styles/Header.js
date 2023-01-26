@@ -6,6 +6,7 @@ const StyledHeader = styled.header`
   justify-content : space-between;
   margin : auto;
   padding : 2rem 0 3rem 0;
+  width : var(--base-component-width);
 `
 const Img = styled.img`
 height : 2.8rem;

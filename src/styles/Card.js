@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 const Section = styled.section `
   margin : auto;
   border-radius: 25px;
+width : var(--base-component-width);
 `
 const Ul = styled.ul `
   display : flex;
@@ -17,8 +18,8 @@ const Ul = styled.ul `
 const Lodgement = styled(Link) `
   display : flex;
   align-items : flex-end;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   background-image : url(${props => props.cover});
+  filter: grayscale(55%);
   border-radius: 10px;
   width : 25%;
   height : 14.1rem;
@@ -28,9 +29,8 @@ const Lodgement = styled(Link) `
 `
 const Title = styled.h3 `
 font-style: normal;
-font-weight: 500;
-font-size: 0.75rem;
+font-weight: var(--weight-medium);
+font-size: 0.9rem;
 color: var(--secondary-color);
-  
 `
 export { Section, Ul, Lodgement, Title }

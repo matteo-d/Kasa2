@@ -6,9 +6,8 @@ const Footer = styled.footer`
   height : 8.7rem;
   background-color : black;
   text-align : center;
-  min-width : 100vw;
   margin-top : 2.5rem;
-  position : relative
+  width : 100%
 `
 const Logo = styled.img `
 padding-top : 1.7rem

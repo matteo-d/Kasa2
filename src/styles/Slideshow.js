@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 const Section = styled.section `
+
+width : var(--base-component-width);
   background-image : url(${props => props.bgImage});
   display : flex;
   height : 17.3rem;
