@@ -6,6 +6,7 @@ const Section = styled.section `
   height : 17.3rem;
   justify-content : space-between;
   margin : auto;
+  border-radius : 25px;
 `
 
 const ArrowLeft = styled.img `

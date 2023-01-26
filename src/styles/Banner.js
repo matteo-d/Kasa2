@@ -2,6 +2,8 @@ import styled from "styled-components"
 import Img from "../assets/IMG.png"
 
 const Section = styled.section`
+background : black;
+opacity : .3;
 background-image: url(${Img});
 background-position : center;
 background-repeat : no-repeat;

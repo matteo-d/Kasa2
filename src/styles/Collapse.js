@@ -1,57 +1,64 @@
 import styled from "styled-components"
 
-const Section = styled.section `background-color : lightblue;
-display : flex;
-justify-content : space-between;
+const Section = styled.section `
+width : 47.5%;
 `
 const Article = styled.article `
 display : flex;
 flex-direction : column;
-margin-top : 2rem;
-
+margin-top : 0.5rem;
+border : 10px;
 `
 const HeaderArticle = styled.div `
 display : flex;
 flex-direction : row;
 justify-content : space-between;
-height : 3rem;
-background-color : #FF6060;
+height : 2.6rem;
+background-color : var(--primary-color);
 border-radius: 5px;
-padding : 0 0rem 0 0.9rem;
+padding : 0 1rem 0 1rem;
 `
 const TitleArticle = styled.h3 `
 font-style: normal;
 font-weight: bold;
-font-size: 24px;
-color : #FFFFFF;
+font-size: 1rem;
+color : var(--secondary-color);
  align-self : center;
 `
 const Arrow = styled.span `
  background-image : url(${props => props.bgImage});
  background-repeat : no-repeat;
  align-self : center;
- height : 1.8rem;
- width : 1.8rem;
+ height : 1.4rem;
+ width : 1rem;
  padding-right : 1.2rem
 `
 const Text = styled.p `
-background: #F7F7F7;
+background-color: var(--tertiary-color);
 border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
 font-style: normal;
 font-weight: 500;
-font-size: 24px;
-color : #FF6060;
+font-size: 1rem;
+color : var(--primary-color);
 display : ${props => props.display};
+margin : 0;
+`
+const Ul = styled.ul`
+background-color :  var(--tertiary-color);
+list-style : none;
+margin : 0;
+padding : 1rem 1.8rem 1rem 0.8rem;
+color : var(--primary-color);
+
 `
 const List = styled.li `
-background: #F7F7F7;
 border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
 font-style: normal;
 font-weight: 500;
-font-size: 24px;
-color : #FF6060;
+font-size: 1rem;
 display : ${props => props.display};
+margin : 0;
 `
-export { Section, Article, HeaderArticle, TitleArticle, Arrow, Text, List }
+export { Section, Article, HeaderArticle, TitleArticle, Arrow, Text, List, Ul }

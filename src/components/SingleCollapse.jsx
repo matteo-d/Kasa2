@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Section, Article, HeaderArticle, Arrow, TitleArticle, Text } from "../styles/Collapse"
+import { Section, Article, HeaderArticle, Arrow, TitleArticle, Text, Ul } from "../styles/Collapse"
 
 import ArrowDown from "../assets/arrowDown.svg"
 import ArrowUp from "../assets/arrowUp.svg"
@@ -18,7 +18,7 @@ export  function SingleCollapseText({article}) {
                 <TitleArticle>Description</TitleArticle>
                 <Arrow bgImage={isExpanded ? ArrowUp : ArrowDown} onClick={toggleArrow}> </Arrow>
             </HeaderArticle>
-            <Text display={isExpanded ? "block" : "none"}>{article.description}</Text>
+            <Text display={isExpanded ? "contents" : "none"}>{article.description}</Text>
         </Article>
     </Section>
   )
@@ -38,11 +38,11 @@ export function SingleCollapseList({list}) {
                 <TitleArticle>Equipements</TitleArticle>
                 <Arrow bgImage={isExpanded ? ArrowUp : ArrowDown} onClick={toggleArrow}> </Arrow>
             </HeaderArticle>
-            <ul style={{ display: isExpanded ? "block" : "none" }}>
+            <Ul style={{ display: isExpanded ? "contents" : "none" }}>
                 {list.map((element, index) => (
                   <li key={index}>{element}</li>
                 ))}
-            </ul>
+            </Ul>
         </Article>
     </Section>
   )

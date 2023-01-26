@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     margin : 0;
     padding : 0;
     box-sizing: border-box;
-    min-height : 100vh;
+    height : 100vh;
     width : 86% ;
     margin : auto;
     font-family: 'Montserrat', sans-serif; 
@@ -15,6 +15,12 @@ const GlobalStyle = createGlobalStyle`
     --secondary-color : #FFFFFF;
     --tertiary-color : #F7F7F7
     }
+    body {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+  }
   `
 
 export default GlobalStyle
