@@ -27,13 +27,10 @@ font-style: normal;
 font-weight: var(--weight-medium);
 font-size: 18px;
 line-height: 142.6%;
-/* identical to box height, or 26px */
-
 display: flex;
 align-items: flex-end;
 text-decoration-line: underline;
-
-color: var(--primary-color); 
+color: var(--primary-color) 
 margin : auto;
 `
 export { Section, ErrorTitle, Text, LinkTo }
