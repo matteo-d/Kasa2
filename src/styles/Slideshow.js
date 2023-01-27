@@ -15,13 +15,13 @@ height : 12rem;
   height : 18rem;
 }
 @media screen and (${device.tablet}){
-  height : 30rem;
+  height : 25rem;
 }
 @media screen and (${device.laptop}){
-  height : 35rem;
+  height : 32rem;
 }
 @media screen and (${device.laptopL}){
-  height : 44rem;
+  height : 40rem;
 }
 @media screen and (${device.desktop}){
   height : 48rem;

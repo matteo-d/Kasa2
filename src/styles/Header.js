@@ -26,7 +26,7 @@ height : 3rem;
 @media screen and (${device.tablet}){
 height : 5rem;
 }
-@media screen and (${device.laptop}){
+@media screen and (${device.desktopL}){
 height : 6rem;
 }
 `
@@ -44,14 +44,7 @@ font-size : 1.2rem;
 font-size : 1.4rem;
 }@media screen and (${device.laptop}){
 font-size : 1.6rem;
-}@media screen and (${device.laptopL}){
-font-size : 1.8rem;
-}@media screen and (${device.desktop}){
-  
-font-size : 2rem;
-}@media screen and (${device.desktopL}){
-font-size : 3rem;
-} 
+}
 
   text-decoration-line: none;
   color: var(--primary-color);
@@ -76,15 +69,6 @@ font-size : 1.4rem;
 }@media screen and (${device.laptop}){
   padding-left : 2rem;
 font-size : 1.6rem;
-}@media screen and (${device.laptopL}){
-  padding-left : 2.5rem;
-font-size : 1.8rem;
-}@media screen and (${device.desktop}){
-  padding-left : 3rem;
-font-size : 2rem;
-}@media screen and (${device.desktopL}){
-  padding-left : 4rem; 
-font-size : 3rem;
 }
   font-weight: var(--weight-medium); 
   text-decoration-line: none;
