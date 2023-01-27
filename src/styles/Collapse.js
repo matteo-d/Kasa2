@@ -68,7 +68,7 @@ font-style: normal;
 font-weight: var(--weight-little);
 font-size: 1rem;
 color : var(--primary-color);
-visibility : ${props => props.visibility};
+display : ${props => props.display};
 margin : 0;
 `
 const Ul = styled.ul`
