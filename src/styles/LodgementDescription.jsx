@@ -5,37 +5,8 @@ const MainContainer = styled.section`
 @media screen and (${device.prehistoricPhone}){
 flex-direction : column;
 }
-@media screen and (${device.mobileS}){
- 
-}
-
-@media screen and (${device.mobileM}){
-  
-}
-
-@media screen and (${device.mobileL}){
-  
-}
-
 @media screen and (${device.tablet}){
-  
 flex-direction : row;
-}
-
-@media screen and (${device.laptop}){
-  
-}
-
-@media screen and (${device.laptopL}){
-  
-}
-
-@media screen and (${device.desktop}){
-  
-}
-
-@media screen and (${device.desktopL}){
-  
 }
 margin : auto;
 width : var(--base-component-width);
@@ -48,29 +19,8 @@ const ContainerLodgementInfos = styled.div`
 @media screen and (${device.prehistoricPhone}){
 width : 100%
 }
-@media screen and (${device.mobileS}){
- 
-}
-@media screen and (${device.mobileM}){
-  
-}
-@media screen and (${device.mobileL}){
-  
-}
 @media screen and (${device.tablet}){
 width : 50%  
-}
-@media screen and (${device.laptop}){
-  
-}
-@media screen and (${device.laptopL}){
-  
-}
-@media screen and (${device.desktop}){
-  
-}
-@media screen and (${device.desktopL}){
-  
 }
 `
 const Title = styled.h4`
@@ -112,29 +62,10 @@ const ContainerLandlord = styled.div`
 width : 100%;
 justify-content : space-between;
 }
-@media screen and (${device.mobileS}){
- 
-}
-@media screen and (${device.mobileM}){
-  
-}
-@media screen and (${device.mobileL}){
-  
-}
 @media screen and (${device.tablet}){
-width : 50%  
-}
-@media screen and (${device.laptop}){
-  
-}
-@media screen and (${device.laptopL}){
-  
-}
-@media screen and (${device.desktop}){
-  
-}
-@media screen and (${device.desktopL}){
-  
+width : 50%;
+flex-direction : column;
+align-items : flex-end
 }
 display : flex;
 `
@@ -142,29 +73,8 @@ const SubContainerInfos = styled.div`
 @media screen and (${device.prehistoricPhone}){
 order : 2;
 }
-@media screen and (${device.mobileS}){
- 
-}
-@media screen and (${device.mobileM}){
-  
-}
-@media screen and (${device.mobileL}){
-  
-}
 @media screen and (${device.tablet}){
   order : 1;
-}
-@media screen and (${device.laptop}){
-  
-}
-@media screen and (${device.laptopL}){
-  
-}
-@media screen and (${device.desktop}){
-  
-}
-@media screen and (${device.desktopL}){
-  
 }
 display : flex;
 `
@@ -184,29 +94,9 @@ const ContainerStars = styled.div`
 @media screen and (${device.prehistoricPhone}){
 order: 1;
 }
-@media screen and (${device.mobileS}){
- 
-}
-@media screen and (${device.mobileM}){
-  
-}
-@media screen and (${device.mobileL}){
-  
-}
 @media screen and (${device.tablet}){
   order : 2;
-}
-@media screen and (${device.laptop}){
-  
-}
-@media screen and (${device.laptopL}){
-  
-}
-@media screen and (${device.desktop}){
-  
-}
-@media screen and (${device.desktopL}){
-  
+  padding-bottom : 1.5rem;
 }
 display : flex;
 `
@@ -219,26 +109,9 @@ const ContainerCollapse = styled.div`
 @media screen and (${device.prehistoricPhone}){
 flex-direction : column;
 }
-@media screen and (${device.mobileS}){
- 
-}
-@media screen and (${device.mobileM}){
-  
-}
-@media screen and (${device.mobileL}){
-  
-}
 @media screen and (${device.tablet}){
   flex-direction : row;
   justify-content : space-between;
-}
-@media screen and (${device.laptop}){
-}
-@media screen and (${device.laptopL}){
-}
-@media screen and (${device.desktop}){
-}
-@media screen and (${device.desktopL}){
 }
 display : flex;		
 width : 100%;
