@@ -4,11 +4,11 @@ import { device } from "../assets/device"
 
 const Section = styled.section`
 @media screen and (${device.prehistoricPhone}){
-height : 4rem;
+height : 3rem;
 }@media screen and (${device.mobileS}){
- height : 5rem;
+ height : 4rem;
 }@media screen and (${device.mobileM}){
- height : 6rem;
+ height : 5rem;
 }@media screen and (${device.mobileL}){
   height : 7rem;
 }@media screen and (${device.tablet}){
@@ -20,7 +20,7 @@ height : 4rem;
 }@media screen and (${device.desktop}){
   height : 12.5rem;
 }@media screen and (${device.desktopL}){
-  height : 14rem;
+  height : 16rem;
 }
 background-image: url(${Img});
 background-position : center;
@@ -44,7 +44,7 @@ const Title = styled.h1
 }@media screen and (${device.mobileL}){
   font-size : 1.6rem;
 }@media screen and (${device.tablet}){
-  font-size : 1.8rem;
+  font-size : 2rem;
 }@media screen and (${device.laptop}){ 
   font-size : 2.2rem;
 }@media screen and (${device.laptopL}){
