@@ -1,7 +1,34 @@
 import styled from "styled-components"
+import { device } from "../assets/device"
 
 const Section = styled.section `
-width : 47.5%;
+@media screen and (${device.prehistoricPhone}){
+
+}
+@media screen and (${device.mobileS}){
+ 
+}
+@media screen and (${device.mobileM}){
+  
+}
+@media screen and (${device.mobileL}){
+  
+}
+@media screen and (${device.tablet}){
+ width : 47.5% 
+}
+@media screen and (${device.laptop}){
+  
+}
+@media screen and (${device.laptopL}){
+  
+}
+@media screen and (${device.desktop}){
+  
+}
+@media screen and (${device.desktopL}){
+  
+}
 `
 const Article = styled.article `
 display : flex;
