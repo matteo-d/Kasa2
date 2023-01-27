@@ -29,7 +29,7 @@ display : flex;
   flex-direction : row;
   flex-wrap : wrap;
 }
-  margin-top : 4rem; 
+  margin-top : 2.4rem; 
   justify-content : space-evenly;
   padding : 0;
   list-style-type : none;

@@ -29,15 +29,6 @@ height : 5rem;
 @media screen and (${device.laptop}){
 height : 6rem;
 }
-@media screen and (${device.laptopL}){
-height : 7rem;
-}
-@media screen and (${device.desktop}){
-height : 8rem;
-}
-@media screen and (${device.desktopL}){
-height : 9rem;
-}
 `
 const ContainerNav = styled.nav`
   align-self : center;
@@ -46,26 +37,20 @@ const LinkHome = styled(Link)`
 @media screen and (${device.prehistoricPhone}){
 font-size : 0.8rem;
 }@media screen and (${device.mobileS}){
- 
 font-size : 1rem;
 }@media screen and (${device.mobileL}){
-  
 font-size : 1.2rem;
 }@media screen and (${device.tablet}){
-  
 font-size : 1.4rem;
 }@media screen and (${device.laptop}){
-  
 font-size : 1.6rem;
 }@media screen and (${device.laptopL}){
-  
 font-size : 1.8rem;
 }@media screen and (${device.desktop}){
   
 font-size : 2rem;
 }@media screen and (${device.desktopL}){
-  
-font-size : 2.2rem;
+font-size : 3rem;
 } 
 
   text-decoration-line: none;
@@ -80,26 +65,26 @@ const LinkAbout = styled(Link)`
   font-size : 0.8rem;
   padding-left : 0.3rem;
 }@media screen and (${device.mobileS}){
-  padding-left : 0.3rem;
+  padding-left : 0.6rem;
   font-size : 1rem;
 }@media screen and (${device.mobileL}){
-  padding-left : 0.5rem;
+  padding-left : 0.8rem;
 font-size : 1.2rem;
 }@media screen and (${device.tablet}){
-  padding-left : 0.5rem;
+  padding-left : 1.5rem;
 font-size : 1.4rem;
 }@media screen and (${device.laptop}){
-  padding-left : 0.7rem;
+  padding-left : 2rem;
 font-size : 1.6rem;
 }@media screen and (${device.laptopL}){
-  padding-left : 0.7rem;
+  padding-left : 2.5rem;
 font-size : 1.8rem;
 }@media screen and (${device.desktop}){
-  padding-left : 0.9rem;
+  padding-left : 3rem;
 font-size : 2rem;
 }@media screen and (${device.desktopL}){
-  padding-left : 0.9rem; 
-font-size : 2.2rem;
+  padding-left : 4rem; 
+font-size : 3rem;
 }
   font-weight: var(--weight-medium); 
   text-decoration-line: none;

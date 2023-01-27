@@ -1,24 +1,16 @@
 import styled from "styled-components"
 
-const LodgementInfos = styled.section`
+
+const MainContainer = styled.section`
 	margin : auto;
 	width : var(--base-component-width);
 	display : flex;
 	justify-content : space-between;
 	flex-wrap : wrap;
 	margin-top : 2rem;
-	height : 38vh;
 `
-const Div = styled.div`
+const ContainerLodgementInfos = styled.div`
 	width : 50%
-`
-const DivDos = styled.div`	
-	width : 50%
-`
-const DivTres = styled.div`
-	display : flex;		
-	width : 100%;
-	justify-content : space-between;
 `
 const Title = styled.h4`
 	font-style: normal;
@@ -52,31 +44,43 @@ const TagElement  = styled.li`
 	padding : 0.33rem 0.75rem 0.33rem 0.75rem;
 	color : var(--secondary-color)
 `
-const Infos = styled.div`
-	display : flex;
-	justify-content : flex-end;
+
+
+const ContainerLandlord = styled.div`	
+width : 50%
+`
+const SubContainerInfos = styled.div`
+display : flex;
+justify-content : flex-end;
 `
 const LandlordName = styled.p`
-	width : min-content;
-	font-weight : var(--weight-medium);
-	font-size: 0.9rem;
-	color : var(--primary-color);
-	margin : 0 0.5rem 0 0;
-	height : 50% ;
+width : min-content;
+font-weight : var(--weight-medium);
+font-size: 0.9rem;
+color : var(--primary-color);
+margin : 0 0.5rem 0 0;
+height : 50% ;
 `
 const LandlordPicture = styled.img`
-	height : 50% ;	
-	border-radius : 50%;
-	width : 2.8rem;
-	height : 2.8rem;
+height : 50% ;	
+border-radius : 50%;
+width : 2.8rem;
+height : 2.8rem;
 `
-const WrapperStars = styled.div`
+const ContainerStars = styled.div`
 height : 50% ;
 display : flex;
 align-items : flex-end;
 justify-content : flex-end;
 `
 const Stars = styled.img`
-	height : 1rem;
+height : 1rem;
 `
-export { Div, DivDos, DivTres, LodgementInfos, Title, Location, ListTags, TagElement, Infos, WrapperStars, Stars, LandlordName, LandlordPicture }
+
+const ContainerCollapse = styled.div`
+	display : flex;		
+	width : 100%;
+	justify-content : space-between;
+`
+
+export { MainContainer, ContainerLodgementInfos, ContainerLandlord, SubContainerInfos,ContainerStars, ContainerCollapse , Title, Location, ListTags, TagElement, LandlordName, LandlordPicture, Stars }

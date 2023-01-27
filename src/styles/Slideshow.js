@@ -1,14 +1,41 @@
 import styled from "styled-components"
+import { device } from "../assets/device"
 
 const Section = styled.section `
-
-width : var(--base-component-width);
+@media screen and (${device.prehistoricPhone}){
+height : 12rem;
+}
+@media screen and (${device.mobileS}){
+ height : 14rem;
+}
+@media screen and (${device.mobileM}){
+  height : 16rem;
+}
+@media screen and (${device.mobileL}){
+  height : 18rem;
+}
+@media screen and (${device.tablet}){
+  height : 30rem;
+}
+@media screen and (${device.laptop}){
+  height : 35rem;
+}
+@media screen and (${device.laptopL}){
+  height : 44rem;
+}
+@media screen and (${device.desktop}){
+  height : 48rem;
+}
+@media screen and (${device.desktopL}){
+  height : 53rem;
+}
+  width : var(--base-component-width);
   background-image : url(${props => props.bgImage});
   background-position : center;
-background-repeat : no-repeat;
-background-size : cover;
+  background-repeat : no-repeat;
+  background-size : cover;
   display : flex;
-  height : 17.3rem;
+  
   justify-content : space-between;
   margin : auto;
   border-radius : 25px;

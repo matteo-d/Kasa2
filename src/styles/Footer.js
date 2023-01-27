@@ -1,16 +1,51 @@
 import styled from "styled-components"
+import { device } from "../assets/device"
 
 const Footer = styled.footer`
-  bottom : 0;
-  left : 0;
-  height : 8.7rem;
+@media screen and (${device.prehistoricPhone}){
+height : 10rem;
+}
+@media screen and (${device.mobileS}){
+ 
+height : 10rem;
+}
+@media screen and (${device.mobileM}){
+  
+height : 11rem;
+}
+@media screen and (${device.mobileL}){
+  
+height : 12rem;
+}
+@media screen and (${device.tablet}){
+  
+height : 13rem;
+}
+@media screen and (${device.laptop}){
+  
+height : 14rem;
+}
+@media screen and (${device.laptopL}){
+  
+height : 15rem;
+}
+@media screen and (${device.desktop}){
+  
+height : 16rem;
+}
+@media screen and (${device.desktopL}){
+  
+height : 17rem;
+}
   background-color : black;
-  text-align : center;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-direction : column;
   margin-top : 2.5rem;
   width : 100%
 `
 const Logo = styled.img `
-padding-top : 1.7rem
 `
 const Legal = styled.p `  
 color : white;
