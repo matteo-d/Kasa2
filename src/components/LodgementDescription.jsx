@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { Div, DivDos, DivTres, LodgementInfos , Title, Location, ListTags, TagElement, Infos, Stars, WrapperStars, LandlordName, LandlordPicture } from "../styles/LodgementDescription"
+import { MainContainer, ContainerLodgementInfos, ContainerLandlord,SubContainerInfos, ContainerCollapse, ContainerStars, Title, Location, ListTags, TagElement,  Stars,  LandlordName, LandlordPicture } from "../styles/LodgementDescription"
 import { SingleCollapseText, SingleCollapseList } from "./SingleCollapse"
 import FilledStar from "../assets/FilledStar.svg"
 import EmptyStar from "../assets/EmptyStar.svg"
@@ -33,8 +33,8 @@ export default function LodgementDescription(){
   const Data = JsonData.filter(prop => prop.id === id)
   const stars = displayStars(Data[0].rating)
     return(
-    <LodgementInfos>
-      <Div>
+    <MainContainer>
+      <ContainerLodgementInfos>
         <Title> {Data[0].title} </Title>
         <Location> {Data[0].location}</Location>
         <ListTags>
@@ -42,23 +42,22 @@ export default function LodgementDescription(){
             <TagElement key={index}>{tag}</TagElement>
           ))}
         </ListTags>
-      </Div>
-      <DivDos>
-          <Infos>
+      </ContainerLodgementInfos>
+      <ContainerLandlord>
+          <SubContainerInfos>
             <LandlordName>{Data[0].host.name}</LandlordName>
             <LandlordPicture src={Data[0].host.picture}/>
-          </Infos>
-          <WrapperStars>
+          </SubContainerInfos>
+          <ContainerStars>
             {stars.map((star, index) =>(
             <Stars key={index} src={star} Stars/>
             ))}
-          </WrapperStars>
-      </DivDos>
-      <DivTres>
+          </ContainerStars>
+      </ContainerLandlord>
+      <ContainerCollapse>
         <SingleCollapseText article={Data[0]} />
         <SingleCollapseList list={BuggyJSONToArray(Data[0].equipments)} />
-
-      </DivTres>
-    </LodgementInfos>
+      </ContainerCollapse>
+    </MainContainer>
   )
 }

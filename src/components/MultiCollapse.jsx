@@ -1,6 +1,6 @@
 import jsonData from "./about_text_data.json"
 import { useState } from "react"
-import { Section, Article, HeaderArticle, Arrow, TitleArticle, Text } from "../styles/Collapse"
+import { Section, Article, HeaderArticle, Arrow, TitleArticle, Text } from "../styles/MultiCollaspe"
 
 import ArrowDown from "../assets/arrowDown.svg"
 import ArrowUp from "../assets/arrowUp.svg"

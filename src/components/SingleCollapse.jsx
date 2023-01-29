@@ -18,7 +18,7 @@ export  function SingleCollapseText({article}) {
                 <TitleArticle>Description</TitleArticle>
                 <Arrow bgImage={isExpanded ? ArrowUp : ArrowDown} onClick={toggleArrow}> </Arrow>
             </HeaderArticle>
-            <Text display={isExpanded ? "contents" : "none"}>{article.description}</Text>
+            <Text display={isExpanded ? "block" : "none"}>{article.description}</Text>
         </Article>
     </Section>
   )
@@ -38,7 +38,7 @@ export function SingleCollapseList({list}) {
                 <TitleArticle>Equipements</TitleArticle>
                 <Arrow bgImage={isExpanded ? ArrowUp : ArrowDown} onClick={toggleArrow}> </Arrow>
             </HeaderArticle>
-            <Ul style={{ display: isExpanded ? "contents" : "none" }}>
+            <Ul style={{ visibility: isExpanded ? "visible" : "hidden" }}>
                 {list.map((element, index) => (
                   <li key={index}>{element}</li>
                 ))}

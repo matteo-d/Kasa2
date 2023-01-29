@@ -41,8 +41,7 @@ export default function Slideshow() {
   useEffect(() => {
     setBgImage(Images[index])
   }, [index, Images])
-
-    if (Data.length === 1) {
+    if (Data.pictures !== "undefined") {
     return(
       <Section bgImage={bgImage}>
         <ArrowLeft onClick={() => Previous(Images,index,setIndex)} src={Arrow1} />
