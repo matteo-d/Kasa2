@@ -4,38 +4,38 @@ import { device } from "../assets/device"
 const BannerAbout = styled.img `
   width : var(--base-component-width);
   border-radius: 25px;
- 
-  place-content : center;
   display : flex;
   margin : auto;
-  margin-bottom : 2rem;
-  object-fit : fill;
-  @media screen and (${device.prehistoricPhone}){
-  height : 8rem;
+@media screen and (${device.prehistoricPhone}){
+  height : 7rem;
 }
 @media screen and (${device.mobileS}){
- height : 9rem;
+ height : 7.5rem;
 }
 @media screen and (${device.mobileM}){
-  height : 10rem;
+  height : 8rem;
 }
 @media screen and (${device.mobileL}){
-  height : 11rem;
+  height : 9.5rem;
 }
 @media screen and (${device.tablet}){
-  height : 13rem; 
+  height : 10rem; 
 }
 @media screen and (${device.laptop}){
   
+  height : 12rem; 
 }
 @media screen and (${device.laptopL}){
   
+  height : 21rem; 
 }
 @media screen and (${device.desktop}){
   
+  height : 23rem; 
 }
 @media screen and (${device.desktopL}){
   
+  height : 25rem; 
 }
 `
 

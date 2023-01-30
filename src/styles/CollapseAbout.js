@@ -7,7 +7,7 @@ margin : auto;
 const Article = styled.article `
 display : flex;
 flex-direction : column;
-margin-top : 0.5rem;
+margin-top : 1.5rem;
 border : 10px;
 `
 const HeaderArticle = styled.div `
