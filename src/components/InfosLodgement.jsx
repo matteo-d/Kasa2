@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, Navigate } from "react-router-dom"
 import { MainContainer, ContainerLodgementInfos, ContainerLandlord, SubContainerInfos, ContainerCollapse, ContainerStars, Title, Location, ListTags, TagElement,  Stars,  LandlordName, LandlordPicture } from "../styles/InfosLodgement"
 import { SingleCollapseText, SingleCollapseList } from "./CollapseLodgement"
 import FilledStar from "../assets/FilledStar.svg"
@@ -28,7 +28,7 @@ function BuggyJSONToArray(equipments) {
   return array
   }
 
-export default function LodgementDescription(){
+export default function InfosLodgement(){
   const { id } = useParams()
   const Data = JsonData.filter(prop => prop.id === id)
   const stars = displayStars(Data[0].rating)
