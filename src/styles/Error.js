@@ -1,36 +1,80 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom"
+import { device } from "../assets/device" 
 const Section = styled.section`
   display : flex;
   flex-direction : column;
-  width : 86%;
-  min-height : 100vh;
-  justify-content : center;
-  margin : 0 7% 0 7%;
+  align-items : center;
+  text-align : center;
+  margin :auto;
+  height : 80vh;
 `
 const ErrorTitle = styled.h4`
-margin : auto;
+@media screen and (${device.prehistoricPhone}){
+font-size : 5rem;
+}
+@media screen and (${device.mobileS}){
+ 
+font-size : 7rem;
+}
+@media screen and (${device.mobileM}){
+  
+font-size : 10rem;
+}
+@media screen and (${device.mobileL}){
+  
+font-size : 14rem;
+}
+@media screen and (${device.tablet}){
+  
+font-size : 18rem;
+}
+@media screen and (${device.laptop}){
+  
+font-size : 23rem;
+}
+@media screen and (${device.laptopL}){
+  
+font-size : 29rem;
+}
+@media screen and (${device.desktopL}){
+  
+font-size : 40rem;
+}
 font-style: normal;
 font-weight: var(--weight-big);
-font-size: 288px;
 color: #FF6060;
+margin-bottom : 0;
+margin-top : 0;
 `
-const Text = styled.p`
+const Text = styled.p
+`@media screen and (${device.prehistoricPhone}){
+ font-size : 1.1rem;
+}
+@media screen and (${device.mobileS}){
+ 
+ font-size : 1.2rem;
+}
+@media screen and (${device.tablet}){
+  
+ font-size : 1.5rem;
+}
+@media screen and (${device.laptopL}){
+  
+ font-size : 1.9rem;
+}
+@media screen and (${device.desktopL}){
+  
+ font-size : 2.4rem;
+}
 font-style: normal;
 font-weight: var(--weight-medium);
-font-size: 36px;
 color: var(--primary-color);
-margin : auto;
 `
 const LinkTo = styled(Link)`
-font-style: normal;
+margin-top : 0;
 font-weight: var(--weight-medium);
-font-size: 18px;
-line-height: 142.6%;
-display: flex;
-align-items: flex-end;
 text-decoration-line: underline;
-color: var(--primary-color) 
-margin : auto;
+color: var(--primary-color); 
 `
 export { Section, ErrorTitle, Text, LinkTo }
