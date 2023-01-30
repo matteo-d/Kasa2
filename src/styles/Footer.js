@@ -3,10 +3,11 @@ import { device } from "../assets/device"
 
 const Footer = styled.footer`
 @media screen and (${device.prehistoricPhone}){
-height : 10rem;
+height : 14rem;
+margin-top : 11rem;
 }
 @media screen and (${device.mobileS}){
- 
+margin-top : 14rem;
 height : 10rem;
 }
 @media screen and (${device.mobileM}){
@@ -43,7 +44,8 @@ height : 17rem;
   justify-content : center;
   flex-direction : column;
   margin-top : 2.5rem;
-  width : 100%
+  width : 100%;
+  bottom : 0;
 `
 const Logo = styled.img `
 `

@@ -1,5 +1,5 @@
-import Banner from "../components/Banner"
-import Card from "../components/Card"
+import Banner from "../components/BannerHome"
+import Card from "../components/CardHome"
 export function Home() {
   return(
     // Bellow using new react frangments syntax ( the empty <>)

@@ -2,32 +2,8 @@ import styled from "styled-components"
 import { device } from "../assets/device"
 
 const Section = styled.section `
-@media screen and (${device.prehistoricPhone}){
-
-}
-@media screen and (${device.mobileS}){
- 
-}
-@media screen and (${device.mobileM}){
-  
-}
-@media screen and (${device.mobileL}){
-  
-}
 @media screen and (${device.tablet}){
  width : 47.5% 
-}
-@media screen and (${device.laptop}){
-  
-}
-@media screen and (${device.laptopL}){
-  
-}
-@media screen and (${device.desktop}){
-  
-}
-@media screen and (${device.desktopL}){
-  
 }
 `
 const Article = styled.article `
@@ -66,7 +42,7 @@ border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
 font-style: normal;
 font-weight: var(--weight-little);
-font-size: 1rem;
+font-size: 0.85rem;
 color : var(--primary-color);
 display : ${props => props.display};
 margin : 0;
@@ -77,6 +53,7 @@ list-style : none;
 margin : 0;
 padding : 1rem 1.8rem 1rem 0.8rem;
 color : var(--primary-color);
+font-size : 0.85rem;
 visibility : ${props => props.visibility};
 `
 const List = styled.li `
@@ -84,7 +61,6 @@ border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
 font-style: normal;
 font-weight: var(--weight-little);
-font-size: 1rem;
 margin : 0;
 `
 export { Section, Article, HeaderArticle, TitleArticle, Arrow, Text, List, Ul }

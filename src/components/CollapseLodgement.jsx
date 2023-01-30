@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Section, Article, HeaderArticle, Arrow, TitleArticle, Text, Ul } from "../styles/Collapse"
+import { Section, Article, HeaderArticle, Arrow, TitleArticle, Text, Ul } from "../styles/CollapseLodgement"
 
 import ArrowDown from "../assets/arrowDown.svg"
 import ArrowUp from "../assets/arrowUp.svg"

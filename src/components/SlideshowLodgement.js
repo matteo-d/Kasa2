@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Navigate } from "react-router-dom"
-import jsonData from "../data.json"
-import { Section, ArrowLeft, ArrowRight } from "../styles/Slideshow"
+import jsonData from "../assets/data.json"
+import { Section, ArrowLeft, ArrowRight } from "../styles/SlideshowLodgement"
 import Arrow1 from "../assets/arrowLeft.svg"
 import Arrow2 from "../assets/arrowRight.svg"
 

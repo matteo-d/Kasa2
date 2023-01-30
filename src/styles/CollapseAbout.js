@@ -40,7 +40,7 @@ border-radius: 5px;
 padding : 1rem 1.8rem 1rem 0.8rem;
 font-style: normal;
 font-weight: var(--weight-little);
-font-size: 1rem;
+font-size: 0.85rem;
 color : var(--primary-color);
 display : ${props => props.display};
 margin : 0;

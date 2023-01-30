@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom"
-import { MainContainer, ContainerLodgementInfos, ContainerLandlord,SubContainerInfos, ContainerCollapse, ContainerStars, Title, Location, ListTags, TagElement,  Stars,  LandlordName, LandlordPicture } from "../styles/LodgementDescription"
-import { SingleCollapseText, SingleCollapseList } from "./SingleCollapse"
+import { MainContainer, ContainerLodgementInfos, ContainerLandlord, SubContainerInfos, ContainerCollapse, ContainerStars, Title, Location, ListTags, TagElement,  Stars,  LandlordName, LandlordPicture } from "../styles/InfosLodgement"
+import { SingleCollapseText, SingleCollapseList } from "./CollapseLodgement"
 import FilledStar from "../assets/FilledStar.svg"
 import EmptyStar from "../assets/EmptyStar.svg"
-import JsonData from "../data.json"
+import JsonData from "../assets/data.json"
 
 function displayStars (numberOfStars){
   let Array = []

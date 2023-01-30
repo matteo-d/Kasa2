@@ -1,4 +1,4 @@
-import { Section, Title } from "../styles/Banner"
+import { Section, Title } from "../styles/BannerHome"
 
 export default function Banner(){
   return(

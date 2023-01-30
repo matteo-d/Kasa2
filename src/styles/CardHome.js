@@ -12,22 +12,6 @@ const Ul = styled.section `
   display : flex;
   flex-direction : row;
   flex-wrap : wrap;
-}@media screen and (${device.laptop}){
-  display : flex;
-  flex-direction : row;
-  flex-wrap : wrap;
-}@media screen and (${device.laptopL}){
-  display : flex;
-  flex-direction : row;
-  flex-wrap : wrap;
-}@media screen and (${device.desktop}){
- display : flex; 
-  flex-direction : row;
-  flex-wrap : wrap;
-}@media screen and (${device.desktopL}){
-display : flex;
-  flex-direction : row;
-  flex-wrap : wrap;
 }
   margin-top : 2.4rem; 
   justify-content : space-evenly;
@@ -42,15 +26,12 @@ width : 100%;
 height : 12rem:
 }
 @media screen and (${device.mobileS}){
- width : 100%;
 height : 14rem;
 }
 @media screen and (${device.mobileM}){
-  width : 100%;
 height : 17rem;
 }
 @media screen and (${device.mobileL}){
-  width : 100%;
 height : 19rem;
 }
 @media screen and (${device.tablet}){
@@ -94,7 +75,7 @@ height : 34rem
   border-radius: 10px;
     height : 14.1rem;
   font-weight : var(--weight-medium);
-  margin-top : 1rem;
+  margin-top : 2rem;
   text-decoration: none; 
 `
 const Title = styled.h3 `
