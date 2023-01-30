@@ -15,19 +15,19 @@ height : 12rem;
   height : 18rem;
 }
 @media screen and (${device.tablet}){
-  height : 25rem;
+  height : 20rem;
 }
 @media screen and (${device.laptop}){
-  height : 32rem;
+  height : 23rem;
 }
 @media screen and (${device.laptopL}){
-  height : 40rem;
+  height : 36rem;
 }
 @media screen and (${device.desktop}){
-  height : 48rem;
+  height : 44rem;
 }
 @media screen and (${device.desktopL}){
-  height : 53rem;
+  height : 49rem;
 }
   width : var(--base-component-width);
   background-image : url(${props => props.bgImage});

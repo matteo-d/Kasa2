@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { device } from "../assets/device"
 
 const Section = styled.section `
+  padding-top : 1.5rem;
   margin : auto;
   border-radius: 25px;
 width : var(--base-component-width);
@@ -13,7 +14,6 @@ const Ul = styled.section `
   flex-direction : row;
   flex-wrap : wrap;
 }
-  margin-top : 2.4rem; 
   justify-content : space-evenly;
   padding : 0;
   list-style-type : none;
@@ -35,32 +35,23 @@ height : 17rem;
 height : 19rem;
 }
 @media screen and (${device.tablet}){
-height : 12rem;
-flex-basis: 28%;
+flex-basis: 27%;
 padding : 0.5rem;
-height : 16rem
+height : 15rem
 }
 @media screen and (${device.laptop}){
-height : 12rem;
-flex-basis: 30%;
 padding : 0.5rem;
-height : 23rem
+height : 18rem
 }
 @media screen and (${device.laptopL}){
-height : 12rem;
-flex-basis: 30%;
 padding : 0.5rem;
-height : 26rem
+height : 24rem
 }
 @media screen and (${device.desktop}){
-height : 12rem;
-flex-basis: 30%;
 padding : 0.5rem;
 height : 29rem
 }
 @media screen and (${device.desktopL}){
-height : 12rem;
-flex-basis: 30%;
 padding : 0.5rem;
 height : 34rem
 }
@@ -71,17 +62,19 @@ height : 34rem
   background-position : center;
   background-repeat : no-repeat;
   background-size : cover;
-  filter: grayscale(55%);
+  filter: grayscale(70%);
   border-radius: 10px;
     height : 14.1rem;
   font-weight : var(--weight-medium);
   margin-top : 2rem;
+  margin-bottom : 1rem;
   text-decoration: none; 
 `
 const Title = styled.h3 `
 font-style: normal;
 font-weight: var(--weight-medium);
-font-size: 0.9rem;
+font-size: 1.1rem;
+width : 50%;
 color: var(--secondary-color);
 `
 export { Section, Ul, Lodgement, Title }
