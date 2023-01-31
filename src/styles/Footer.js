@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { device } from "../assets/device"
 
-const Footer = styled.footer`
+const Foo = styled.footer`
 @media screen and (${device.prehistoricPhone}){
 height : 14rem;
 margin-top : 11rem;
@@ -52,4 +52,4 @@ const Logo = styled.img `
 const Legal = styled.p `  
 color : white;
 `
-export { Logo, Legal, Footer }
+export { Logo, Legal, Foo }
