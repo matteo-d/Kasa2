@@ -1,11 +1,11 @@
-import { Logo, Legal, Footer } from "../styles/Footer"
+import { Logo, Legal, Foo } from "../styles/Footer"
 import Svg from "../assets/LogoWhite.svg"
 
-export default function Foo (){
+export default function Footer (){
   return(
-    <Footer>
+    <Foo>
       <Logo src={Svg}></Logo>
       <Legal>© 2020 Kasa All rights reserved</Legal>
-    </Footer>
+    </Foo>
   )
 }
