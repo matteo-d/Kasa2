@@ -29,6 +29,7 @@ color : var(--secondary-color);
  align-self : center;
 `
 const Arrow = styled.span `
+ transition : 0.15s ease-in-out;
  background-image : url(${props => props.bgImage});
  background-repeat : no-repeat;
  align-self : center;

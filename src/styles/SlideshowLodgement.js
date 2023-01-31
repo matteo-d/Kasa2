@@ -29,6 +29,7 @@ height : 12rem;
 @media screen and (${device.desktopL}){
   height : 49rem;
 }
+  transition : 0.4s ease-in-out;
   width : var(--base-component-width);
   background-image : url(${props => props.bgImage});
   background-position : center;
