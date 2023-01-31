@@ -62,9 +62,8 @@ height : 34rem
   background-position : center;
   background-repeat : no-repeat;
   background-size : cover;
-  filter: grayscale(70%);
   border-radius: 10px;
-    height : 14.1rem;
+  height : 14.1rem;
   font-weight : var(--weight-medium);
   margin-top : 2rem;
   margin-bottom : 1rem;

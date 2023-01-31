@@ -1,11 +1,14 @@
-import Slideshow from "../components/SlideshowLodgement"
-import LodgementDescription from "../components/InfosLodgement"
+import SlideshowLodgement from "../components/SlideshowLodgement"
+import InfosLodgement from "../components/InfosLodgement"
+import ErrorBoundary from "../components/ErrorBoundary"
 
-export function Lodging() {
+export function Lodgement() {
     return(
      <>
-        <Slideshow />
-        <LodgementDescription />
+      <ErrorBoundary>
+       <SlideshowLodgement />
+        <InfosLodgement />
+      </ErrorBoundary>
      </>
     )
 }

@@ -27,11 +27,11 @@ const BannerAbout = styled.img `
 }
 @media screen and (${device.laptopL}){
   
-  height : 21rem; 
+  height : 18rem; 
 }
 @media screen and (${device.desktop}){
   
-  height : 23rem; 
+  height : 21rem; 
 }
 @media screen and (${device.desktopL}){
   
