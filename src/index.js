@@ -8,8 +8,10 @@ import { Lodging } from "./pages/Lodging"
 import { About } from "./pages/About"
 import { Err } from "./pages/Error"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log("Test commit from new directory")
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+// Hey Test
 root.render(
   <React.StrictMode>
     <BrowserRouter>
